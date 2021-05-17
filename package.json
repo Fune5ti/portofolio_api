@@ -1,0 +1,14 @@
+{
+  "name": "portofolio-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "express": "~4.16.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.9"
+  }
+}
