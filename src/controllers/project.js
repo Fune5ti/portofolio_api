@@ -13,12 +13,13 @@ const getAllProjects = async (req, res) => {
 
 const createNewProjectEntry = async (req, res) => {
   try {
-    const { name, year, image, description } = req.body;
+    const { name, year, image, description, technologies } = req.body;
     const project = new Project({
       name,
       year,
       image,
       description,
+      technologies,
     });
     await project.save();
     res.status(200).send(project);
